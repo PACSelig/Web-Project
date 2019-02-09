@@ -14,11 +14,6 @@ body {
   background-size: cover;
 }
 
-@font-face {
-  font-family: 'Minimal';
-  src: url('fonts/minimal.otf');
-}
-
 .topbar {
   background-color: #2e2e2e;
   padding-left: 100%;
@@ -28,7 +23,7 @@ body {
   top: 0%;
   left: 0%;
   z-index: -1;
-  box-shadow: 0 2px 2px #004492, inset 0 -2px 1px rgb(0, 60, 129);
+  box-shadow: 0 2px 2px #004492, inset 0 -2px 1px #003c81;
 }
 
 header {
@@ -41,7 +36,8 @@ header .title{
   top: 0.15em;
   right: 6.8em;
   color: aliceblue;
-  font-family: 'Minimal';
+  font-family: 'Abel';
+  font-weight: lighter;
   font-size: 2.5em;
   
 }
@@ -52,7 +48,8 @@ header .team{
   top: 1.1em;
   right: 0.45em;
   color: aliceblue;
-  font-family: 'Minimal';
+  font-family: 'Abel';
+  font-weight: lighter;
   font-size: 1.19em;
   
 }
@@ -90,26 +87,26 @@ header .team{
 button {
   border: 0;
   border-radius: 2px;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
 button.blueHoverButton{
-  background-color: rgb(58, 136, 136);
+  background-color: #003c81;
   position: absolute;
   top: 92%;
   left: 4%;
   width: 90%;
-  height: 6vh;
-  font-family: 'Minimal';
-  font-size: 6vh;
+  height: 6.5vh;
+  font-family: 'Abel';
+  font-weight: lighter;
+  font-size: 5vh;
   text-align: center;
   color: rgb(209, 197, 201);
 }
 
 button.blueHoverButton:hover{
-  background-color: rgb(62, 153, 153);
-  background-image: linear-gradient(to top right, #3a8888, #d1c5c9)
+  background-color: #004492;
 }
 
 div.settingsBackground {
@@ -123,10 +120,11 @@ h4.settingsText {
   position: absolute;
   text-align: end;
   margin: 0;
-  top: -4.9%;
-  left: 14%;
+  top: 5%;
+  left: 15%;
   color: aliceblue;
-  font-family: 'Minimal';
-  font-size: 3.5em;
+  font-family: 'Abel';
+  font-weight: lighter;
+  font-size: 2.5em;
   cursor: default;
 }
