@@ -1,7 +1,7 @@
-var toggle = false;
+var toggle = false; 
+var elem = document.getElementById("sidemenu");
 function openMenu() {
     var pos = 13;
-    var elem = document.getElementById("sidemenu");   
     var id = setInterval(frame, 3);
     function frame() {
         if (pos == 0) {
@@ -10,13 +10,12 @@ function openMenu() {
             if(pos > 0.1){
                 pos -= 0.1;
                 elem.style.right = pos + 'em';
-                }
             }
+        }
     }
 }
 function closeMenu() {
     var pos = 0;
-    var elem = document.getElementById("sidemenu");   
     var id = setInterval(frame, 3);
     function frame() {
         if (pos == 13) {
