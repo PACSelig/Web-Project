@@ -6,6 +6,7 @@ html {
 
 body {
   min-width: 550px;
+  overflow: hidden;
 }
 
 .main {
@@ -66,21 +67,21 @@ header .team{
 
 #sidemenucontainer {
   position: relative;
-  height: 41.094em;
+  height: 94.5vh;
   width: 13em;
   top: 2em;
   left: -0.47em;
   z-index: 1;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #sidemenu {
   background-color: #2e2e2e;
   position: absolute;
-  height: 41.094em;
+  height: 94.5vh;
   width: 13em;
   top: 0em;
   right: 13em;
   z-index: 2;
-  overflow: hidden;
+  overflow: scroll;
 }
