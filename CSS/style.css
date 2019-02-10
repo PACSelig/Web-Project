@@ -1,7 +1,7 @@
 html {
   position: relative;
   min-width: 550px;
-  min-height: 43em
+  min-height: 43em;
 }
 
 @font-face {
@@ -19,52 +19,56 @@ body {
   background-size: cover;
 }
 
-.topbar {
+
+header {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+
+header .topbar {
+  position: relative;
   background-color: #2e2e2e;
   padding-left: 100%;
   padding-top: 0%;
   position: absolute;
-  height: 2.7em;
+  height: 5%;
   top: 0%;
   left: 0%;
   z-index: -1;
   box-shadow: 0 2px 2px #004492, inset 0 -2px 1px #003c81;
 }
 
-header {
-  width: 10em;
-}
-
 header .title{
   margin: 0;
   position: absolute;
-  top: 0em;
-  right: 6.8em;
+  top: 6%;
+  right: 22.6%;
   color: aliceblue;
   font-family: 'Abel';
   font-weight: lighter;
-  font-size: 2.5em;
+  font-size: 2em;
   
 }
 
 header .team{
   margin: 0;
   position: absolute;
-  top: 1.1em;
-  right: 0.45em;
+  top: 36%;
+  right: 0.5%;
   color: aliceblue;
   font-family: 'Abel';
   font-weight: lighter;
-  font-size: 1.19em;
+  font-size: 1.1em;
   
 }
 
-.menu {
+header .menu {
   cursor: pointer;
-  height: 2.3em;
+  height: 4.3%;
   position: absolute;
-  top: 0.05em;
-  left: 0.1em;
+  top: 0.2%;
+  left: 0.23%;
 }
 
 div {
