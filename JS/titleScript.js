@@ -7,7 +7,7 @@ function openMenu() {
         if (pos == 0) {
             clearInterval(id);
         } else {
-            if(pos > 0.1){
+            if(pos > 0){
                 pos -= 0.1;
                 elem.style.right = pos + 'em';
             }
