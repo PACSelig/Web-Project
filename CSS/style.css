@@ -1,132 +1,63 @@
-html {
-  position: relative;
-  min-width: 550px;
-  min-height: 43em;
-}
-
-@font-face {
-  font-family: 'Light';
-  src: url("../fonts/TheLightFont.otf");
-}
-
 body {
-  min-width: 550px;
+  background-color: lavenderblush;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
-.main {
-  background-color: lavender;
-  background-size: cover;
-}
-
-header .topbar {
-  position: relative;
-  background-color: #2e2e2e;
-  padding-left: 100%;
-  padding-top: 0%;
-  position: absolute;
-  height: 5%;
-  top: 0%;
-  left: 0%;
-  z-index: -1;
-  box-shadow: 0 2px 2px #004492, inset 0 -2px 1px #003c81;
-}
-
-header .title{
-  margin: 0;
-  position: absolute;
-  top: 6%;
-  right: 22.6%;
-  color: aliceblue;
-  font-family: 'Abel';
-  font-weight: lighter;
-  font-size: 2em;
-  
-}
-
-header .team{
-  margin: 0;
-  position: absolute;
-  top: 36%;
-  right: 0.5%;
-  color: aliceblue;
-  font-family: 'Abel';
-  font-weight: lighter;
-  font-size: 1.1em;
-  
-}
-
-header .menu {
-  cursor: pointer;
-  height: 4.3%;
-  position: absolute;
-  top: 0.2%;
-  left: 0.23%;
-}
-
-#sidemenucontainer {
-  position: relative;
-  height: 98vh;
-  left: 0%;
-  width: 13em;
-  top: 2em;
-  z-index: 1;
-  overflow: hidden;
-}
-
-#sidemenu {
-  background-color: #2e2e2e;
-  position: absolute;
-  height: 96vh;
+#navBar {
+  height: 40px;
   width: 100%;
-  top: 0em;
-  right: -13em;
-  z-index: 2;
-  overflow-y: auto;
-  overflow-x: hidden;
+  background-color: #2f2f2f;
+  color: antiquewhite;
+  border-bottom: 2.5px #1a53ff solid; 
 }
 
-button {
-  border: 0;
-  border-radius: 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-button.blueHoverButton{
-  background-color: #003c81;
-  position: absolute;
-  bottom: 2%;
-  left: 4%;
-  width: 90%;
-  height: 6.5vh;
-  font-family: 'Abel';
-  font-weight: lighter;
-  font-size: 5vh;
-  text-align: center;
-  color: rgb(209, 197, 201);
-}
-
-button.blueHoverButton:hover{
-  background-color: #004492;
-}
-
-div.settingsBackground {
-  background-color: #3d3d3d;
-  position: absolute;
-  width: 100%;
-  height: 6vh;
-}
-
-h4.settingsText {
-  position: absolute;
-  text-align: end;
+#menuButton {
   margin: 0;
-  top: 5%;
-  left: 15%;
-  color: aliceblue;
-  font-family: 'Abel';
-  font-weight: lighter;
-  font-size: 2.5em;
-  cursor: default;
+  position:  absolute;
+  height: 35px;
+  left: 1px;
+  top: 1.5px;
+}
+
+#title {
+  margin: 0;
+  right: 130px;
+  position: relative;
+  text-align: right;
+  font: 20px 'Abel';
+}
+
+#team {
+  margin: 0;
+  position: relative;
+  right: 5px;
+  bottom: 6px;
+  text-align: right;
+  font: 15px 'Abel';
+}
+
+@media only screen and (min-width: 768px) {
+  #title {
+    font-size: 32px;
+    right: 276px;
+    top: 4px;
+  }
+  #team {
+    font-size: 20px;
+    bottom: 26px;
+  }
+
+  #menuContainer {
+    width: 1vw;
+  }
+}
+
+#menuContainer {
+  background-color: #2f2f2f;
+  position: relative;
+  width: 100vw;
+  height: 94vh;
 }

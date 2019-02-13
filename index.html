@@ -5,29 +5,21 @@
     <title>IWTracker | Home</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="main">
-    <header>
-        <img class="menu" src="images/menu.png" onclick="menuToggle()"></img>
-        <div class="topbar"> <!-- Creates the title bar on top of the screen. -->
-            <p class="title" onselectstart="return false;">IWTracker</p>
-            <p class="team">by Christopher Selig and Marcus toot</p>
-        </div> 
-    </header>
-
-    <content>
-        <div id="sidemenucontainer"> <!-- Contains the side menu and it's content. -->
-            <div id="sidemenu"> <!-- Creates the side menu to contain content.  -->
-                <div class="settingsBackground"> <!-- Makes a grey background to make the menu's title more visible -->
-                    <h4 class="settingsText" onselectstart="return false;">Settings</h4> 
-                </div>
-                <button type="button" class="blueHoverButton">Submit</button>
+<body>
+    <div class="container">
+        <nav>
+            <div id="navBar">
+                <img src="images/menu.png" alt="menuButton" id="menuButton">
+                <h3 id="title">IWTracker</h3>
+                <h3 id="team">By Christopher Selig & Marcus toot</h3>
             </div>
-        </div>
-    </content>
-    <script src="JS/titleScript.js"></script>
+        </nav>
+        <div id="menuContainer"></div>
+    </div>
+    <script src="js/titleScript.js"></script>
 </body>
-
 </html>
