@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>IWTracker | Home</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#2f2f2f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav>
-            <div id="navBar">
-                <img src="images/menu.png" alt="menuButton" id="menuButton">
-                <h3 id="title">IWTracker</h3>
-                <h3 id="team">By Christopher Selig & Marcus toot</h3>
-            </div>
-        </nav>
-        <div id="menuContainer"></div>
+      <nav>
+        <div id="navBar">
+          <img src="images/menu.png" alt="menuButton" id="menuButton" onclick="menuToggle()" />
+          <h3 id="title">IWTracker</h3>
+          <h3 id="team">By Christopher Selig & Marcus Toot</h3>
+        </div>
+      </nav>
+      <div id="menuContainer">
+        <div>
+            <h1 class="menuText"><a href="#Closings">Closings</a></h1>
+            <h1 class="menuText">Forecast</h1>
+            <h1 class="menuText">Contact</h1>
+            <h1 class="menuText">About</h1>
+            <h1 class="menuText">FAQ</h1>
+        </div>
+      </div>
     </div>
-    <script src="js/titleScript.js"></script>
-</body>
+    <script src="JS/titleScript.js"></script>
+  </body>
 </html>
