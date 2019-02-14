@@ -61,7 +61,7 @@ body {
   }
 
   #menuContainer {
-    width: 20vw;
+    width: 200px;
     height: 100vh;
   }
 }
@@ -71,6 +71,6 @@ body {
   text-align: center;
   font: 250% "Abel";
   color: antiquewhite;
-  border-bottom: -1px #383838 solid;
+  border-bottom: 1px #383838 solid;
   text-decoration: none;
 }
