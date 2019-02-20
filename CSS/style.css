@@ -167,6 +167,10 @@ hr {
 }
 
 article {
-
   background-color:  #f4f4f4;
+  padding-bottom: 1px;
 }
+
+/*hr {
+  box-shadow: 0.25px 0.25px 0.5px;
+}*/
