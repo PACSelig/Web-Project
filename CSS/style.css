@@ -29,7 +29,7 @@ nav {
   z-index: 4;
 }
 
-nav > *{
+nav>* {
   position: sticky;
   top: 0;
   z-index: 4;
@@ -92,6 +92,7 @@ nav > *{
     /*right: 276px;
     top: 4px;*/
   }
+
   #team {
     font-size: 20px;
     bottom: 26px;
@@ -131,7 +132,7 @@ nav > *{
   background-color: #373636
 }
 
-#menuContainer > div > h1.menuText > a {
+#menuContainer>div>h1.menuText>a {
   text-decoration: none;
   color: antiquewhite;
 }
@@ -143,7 +144,7 @@ nav > *{
 #main-container {
   position: absolute;
   height: calc(100% - 42.6px);
-  background-color:  #f4f4f4;
+  background-color: #f4f4f4;
   z-index: 2;
 }
 
@@ -167,10 +168,6 @@ hr {
 }
 
 article {
-  background-color:  #f4f4f4;
+  background-color: #f4f4f4;
   padding-bottom: 1px;
 }
-
-/*hr {
-  box-shadow: 0.25px 0.25px 0.5px;
-}*/
