@@ -13,19 +13,21 @@ let template = `
 }
 
 function saveArticles() {
-  for (let i = 0; i < article.getElementsByClassName("Article").length; i++) {
-    if(i > 1){
-      const element = article.getElementsByClassName("Article")[i];
-      localStorage.setItem("article" + (i-2), element.innerHTML);
+    const element = article.getElementsByClassName("Article");
+    let index = 1;
+    for(var art of element){
+      console.info(art);
+      localStorage.setItem('Article' + index, art.outerHTML);
+      index++
     }
-  }
 }
 
 function loadArticles() {
   article.innerHTML = "";
-  for (let i = 0; i < localStorage.length; i++) {
-      const element = localStorage.getItem("article" + i);
-      article.innerHTML = article.innerHTML + element;
+  for (let i = 1; i <= localStorage.length; i++) {
+    const element = localStorage.getItem("Article" + i);
+    article.innerHTML = element + article.innerHTML;
+    
   }
 }
 
