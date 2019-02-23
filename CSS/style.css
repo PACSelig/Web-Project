@@ -99,13 +99,15 @@ nav>* {
   }
 
   #menuButton {
+
     visibility: hidden;
   }
 
   #menuContainer {
     width: 200px;
-    height: calc(100% - 43px);
+    height: 100%;
     left: 0%;
+    position: sticky;
   }
 
   #main-container {
@@ -149,7 +151,7 @@ nav>* {
 }
 
 #main-Title {
-  font: 250% 'arial';
+  font: 250% "Abel";
   margin-left: 15px;
   margin-bottom: 13.4px;
   margin-top: 13.4px;
