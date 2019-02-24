@@ -18,7 +18,7 @@ function saveArticles() {
     for(var art of element){
       console.info(art);
       localStorage.setItem('Article' + index, art.outerHTML);
-      index++
+      index++;
     }
 }
 
@@ -27,7 +27,7 @@ function loadArticles() {
   for (let i = 1; i <= localStorage.length; i++) {
     const element = localStorage.getItem("Article" + i);
     article.innerHTML = element + article.innerHTML;
-    
+
   }
 }
 
