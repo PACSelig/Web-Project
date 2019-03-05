@@ -1,0 +1,209 @@
+html {
+  height: 94vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  background-color: #fff0f5;
+  display: inline;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Abel';
+  font-display: auto;
+  src: url("../fonts/Abel.woff2");
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f8ff;
+  display: inline;
+}
+
+nav {
+  top: 0;
+  z-index: 4;
+}
+
+nav *{
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+#navBar {
+  height: 40px;
+  width: 100%;
+  background-color: #2f2f2f;
+  color: #faebd7;
+  border-bottom: 2.5px #1a53ff solid;
+}
+
+#menuButton {
+  margin: 0;
+  position: absolute;
+  height: 35px;
+  left: 1px;
+  top: 1.5px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+#title {
+  margin: 0;
+  /*right: 130px;*/
+  position: relative;
+  text-align: right;
+  right: 10px;
+  bottom: 1px;
+  font: 35px "Abel";
+}
+
+#team {
+  margin: 0;
+  position: relative;
+  right: 5px;
+  bottom: 6px;
+  text-align: right;
+  font: 15px "Abel";
+}
+
+#menuContainer {
+  background-color: #2f2f2f;
+  position: relative;
+  left: -100%;
+  width: 100%;
+  height: calc(100% - 42.5px);
+  display: inline-block;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 768px) {
+  nav{
+    position: sticky;
+    top: 0;
+  }
+
+  #title {
+    font-size: 35px;
+    font-weight: bold;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+    /*right: 276px;
+    top: 4px;*/
+  }
+
+  #team {
+    font-size: 20px;
+    bottom: 26px;
+  }
+
+  #menuButton {
+    visibility: hidden;
+  }
+
+  #menuContainer {
+    width: 200px;
+    height: 100%;
+    left: 0%;
+    position: sticky;
+    overflow: unset;
+  }
+
+  #main-container {
+    width: calc(100% - 200px);
+    height: calc(100% - 42.6px);
+    left: 200px;
+    top: 43px;
+    overflow-y: scroll;
+  }
+}
+
+.menuText {
+  margin: 0;
+  padding-top: 6px;
+  text-align: center;
+  font: 250% "Abel";
+  color: #faebd7;
+  padding-bottom: 6px;
+  border-bottom: 1px #383838 solid;
+  cursor: pointer;
+  transition-duration: 350ms;
+}
+
+.menuText:hover {
+  background-color: #373636
+}
+
+#menuContainer>div>h1.menuText>a {
+  text-decoration: none;
+  color: #faebd7;
+}
+
+#topLink {
+  margin-top: 0;
+}
+
+#main-container {
+  position: absolute;
+  height: calc(100% - 42.6px);
+  background-color: #f4f4f4;
+  z-index: 2;
+}
+
+#main-Title {
+  font: 250% "Abel";
+  margin-left: 15px;
+  margin-bottom: 13.4px;
+  margin-top: 13.4px;
+}
+
+hr {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#mainArticleText {
+  margin-left: 8px;
+  line-height: 5px;
+  margin-right: 8px;
+  font: 20px "Abel";
+}
+
+article {
+  background-color: #f4f4f4;
+  padding-bottom: 1px;
+}
+
+form#login{
+  position: relative;
+  top: 220px;
+}
+
+form#login>input#loginPageBtn {
+  position: relative;
+  left: 6px;
+  background-color: #1e90ff;
+  padding: 15px 60px;
+  border: 0;
+}
+
+form#login>input#loginPageBtn:hover {
+  position: relative;
+  left: 6px;
+  background-color: #1b7ada;
+  padding: 15px 60px;
+  border: 0;
+}
+
+.menuText .login {
+  text-decoration: none;
+  font-size: 100%;
+}
