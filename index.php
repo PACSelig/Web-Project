@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
   <title>IWTracker | Home</title>
   <!-- ****** faviconit.com favicons ****** -->
   <link rel="shortcut icon" href="../images/favicon.ico">
@@ -25,17 +24,19 @@
   <meta name="msapplication-TileImage" content="../images/favicon-144.png">
   <meta name="msapplication-config" content="../images/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
-  <link rel="stylesheet" href="CSS/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
-  <meta name="theme-color" content="#2f2f2f" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <meta name="theme-color" content="#2f2f2f">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style data-styled-components=""></style>
 </head>
 
 <body id="body">
-  <div class="container">
-    <nav>
+   <div id="bg-image"></div>
+   <div class="container">
+    <nav style="position:sticky;">
       <div id="navBar">
-        <img src="images/menu.png" alt="menuButton" id="menuButton" onclick="menuToggle()" />
+        <img src="images/menu.png" alt="menuButton" id="menuButton" onclick="menuToggle()">
         <h3 id="title">IWTracker</h3>
         <!--<h3 id="team">By Christopher Selig & Marcus Toot</h3>-->
       </div>
@@ -48,7 +49,7 @@
         <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
         <h1 class="menuText"><a href="contact.html">Contact</a></h1>
         <h1 class="menuText"><a href="faq.html">FAQ</a></h1>
-        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h1>
+        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h5>
       </div>
     </div>
     <div id="main-container">
@@ -69,7 +70,7 @@
           <h1 id="main-Title">Meet our team</h1>
           <hr>
           <p id="mainArticleText">
-            Our team is currently made up of two people, Christopher Selig & Marcus Toot, if in the future we expand,
+            Our team is currently made up of two people, Christopher Selig &amp; Marcus Toot, if in the future we expand,
             we may bring more people onto the team to work on the website but for now I think you should learn a little
             more about the team. Follow this link to learn a little more about us: 
             <a href="ourTeam.html" style="text-decoration: none">Our Team</a>
@@ -78,9 +79,10 @@
       </article>
     </div>
   </div>
-  </div>
+  
   <script src="JS/titleScript.js"></script>
   <script src="JS/articles.js" onload="loadArticles()"></script>
-</body>
 
+
+  </body>
 </html>
