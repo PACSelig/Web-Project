@@ -44,7 +44,7 @@
     <div id="menuContainer">
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
-        <h1 class="menuText"><a href="closings.html">Closings</a></h1>
+        <h1 class="menuText"><a href="closings.php">Closings</a></h1>
         <h1 class="menuText"><a href="forecast.html">Forecast</a></h1> 
         <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
         <h1 class="menuText"><a href="contact.html">Contact</a></h1>

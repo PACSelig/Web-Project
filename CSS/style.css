@@ -60,7 +60,7 @@ nav *{
   margin: 0;
   position: relative;
   text-align: right;
-  right: 10px;
+  margin-right: 25px;
   bottom: 1px;
   font: 35px "Abel";
 }
@@ -126,6 +126,10 @@ nav *{
     width: calc(100% - 200px);
     left: 200px;
     top: 43px;
+  }
+
+  #bg-image {
+    transform: scale(1.1);
   }
 }
 
@@ -223,5 +227,4 @@ form#login>input#loginPageBtn:hover {
   filter: blur(2px);
   display: inline;
   position: absolute;
-  transform: scale(1.1);
 }

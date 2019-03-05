@@ -33,6 +33,7 @@
 </head>
 
 <body id="body">
+  <div id="bg-image"></div>
   <div class="container">
     <nav>
       <div id="navBar">
@@ -44,16 +45,17 @@
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
         <h1 class="menuText"><a href="closings.php">Closings</a></h1>
-        <h1 class="menuText"><a href="forecast.html">Forecast</a></h1> 
+        <h1 class="menuText"><a href="forecast.html">Forecast</a></h1>
         <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
         <h1 class="menuText"><a href="contact.html">Contact</a></h1>
         <h1 class="menuText"><a href="faq.html">FAQ</a></h1>
-        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h1>
+        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h5>
       </div>
     </div>
     <div id="main-container">
       <article>
-        <iframe class="iframe vendor-embed-iframe" id="shortcode_iframe" width="770" height="672px" src="https://newcdn.tribtv.com/wnep/closings/school.html" frameborder="0" scrolling="yes"></iframe>
+        <iframe class="iframe vendor-embed-iframe" id="shortcode_iframe" width="770" height="672px" src="https://newcdn.tribtv.com/wnep/closings/school.html"
+          frameborder="0" scrolling="yes"></iframe>
       </article>
     </div>
   </div>
