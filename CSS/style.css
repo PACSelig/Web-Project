@@ -133,6 +133,12 @@ nav *{
   }
 }
 
+@media only screen and (max-width: 768){
+  #bg-image{
+    transform: scale(1);
+  }
+}
+
 .menuText {
   margin: 0;
   padding-top: 6px;
@@ -227,5 +233,4 @@ form#login>input#loginPageBtn:hover {
   filter: blur(2px);
   display: inline;
   position: absolute;
-  transform: scale(1);
 }
