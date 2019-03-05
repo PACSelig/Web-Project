@@ -32,7 +32,7 @@ nav {
 }
 
 nav *{
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 4;
 }
@@ -40,9 +40,10 @@ nav *{
 #navBar {
   height: 40px;
   width: 100%;
-  background-color: #2f2f2f;
   color: #faebd7;
-  border-bottom: 2.5px #1a53ff solid;
+  background: linear-gradient(30deg, #4169e1 0%,#d08bea 100%);
+  border-bottom: 2.5px #d8cbba solid;
+  box-shadow: inset 1px 1px 8px #2f2f2f;
 }
 
 #menuButton {
@@ -57,7 +58,6 @@ nav *{
 
 #title {
   margin: 0;
-  /*right: 130px;*/
   position: relative;
   text-align: right;
   right: 10px;
@@ -75,18 +75,20 @@ nav *{
 }
 
 #menuContainer {
-  background-color: #2f2f2f;
   position: relative;
   left: -100%;
   width: 100%;
+  top: 42.5px;
   height: calc(100% - 42.5px);
   display: inline-block;
   z-index: 3;
+  background-color: #2f2f2f
 }
 
 @media only screen and (min-width: 768px) {
   nav{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
   }
 
@@ -96,8 +98,6 @@ nav *{
     bottom: 2px;
     width: 100%;
     text-align: center;
-    /*right: 276px;
-    top: 4px;*/
   }
 
   #team {
@@ -113,16 +113,18 @@ nav *{
     width: 200px;
     height: 100%;
     left: 0%;
-    position: sticky;
+    top: 42.5px;
+    position: fixed;
     overflow: unset;
+    background: linear-gradient(30deg, #272727 0%,#2f2f2f 100%);
+    box-shadow: inset -1px -0.5px 20px;
   }
 
   #main-container {
+    position: fixed;
     width: calc(100% - 200px);
-    height: calc(100% - 42.6px);
     left: 200px;
     top: 43px;
-    overflow-y: scroll;
   }
 }
 
@@ -135,6 +137,7 @@ nav *{
   padding-bottom: 6px;
   border-bottom: 1px #383838 solid;
   cursor: pointer;
+  /* position: fixed; */
   transition-duration: 350ms;
 }
 
@@ -152,17 +155,18 @@ nav *{
 }
 
 #main-container {
-  position: absolute;
+  position: fixed;
+  top: 42.5px;
   height: calc(100% - 42.6px);
-  background-color: #f4f4f4;
   z-index: 2;
+  overflow-y: auto;
 }
 
 #main-Title {
   font: 250% "Abel";
   margin-left: 15px;
   margin-bottom: 13.4px;
-  margin-top: 13.4px;
+  margin-top: 0;
 }
 
 hr {
@@ -178,7 +182,7 @@ hr {
 }
 
 article {
-  background-color: #f4f4f4;
+  background-color: #9e9e9e66;
   padding-bottom: 1px;
 }
 
@@ -206,4 +210,16 @@ form#login>input#loginPageBtn:hover {
 .menuText .login {
   text-decoration: none;
   font-size: 100%;
+}
+
+#bg-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/background_image2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  display: inline;
+  position: absolute;
+  transform: scale(1.1);
 }
