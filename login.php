@@ -45,19 +45,15 @@
         $user = $_POST['user'];
         $pass = $_POST['pass'];
         unset($_POST);
-      if(isset($user)){
-        if($user != "Cseligemail@gmail.com"){
+      if(isset($user) && $user != "Cseligemail@gmail.com"){
           echo '<h3 class="errorText">* Incorrect username. Please try again.</h3>';
         }
-      }
       
       echo '<input type="email" style="text-indent: 8px;" name="user" id="username" placeholder="Username" required minlength="5" maxlength="30">';
       
-      if(isset($pass)){
-        if($pass != "Cselig0119"){
+        if(isset($pass) && $pass != "Cselig0119"){
           echo '<h3 class="errorText">* Incorrect password. Please try again.</h3>';
         }
-      }
         ?>
           <input type="password" style="text-indent: 8px;" name="pass" id="password" placeholder="Password" required minlength="5" maxlength="30">
           <input type="checkbox" name="remember Me" id="rememberMe">
@@ -65,8 +61,8 @@
           <input type="submit" id="submitBtn" value="Login">
       </form>
       <?php
-        if($user == "Cseligemail@gmail.com"){
-          if($pass == "Cselig0119"){
+        if(isset($user) && $user == "Cseligemail@gmail.com"){
+          if(isset($pass) && $pass == "Cselig0119"){
             header("Location: index.php");
             exit;
           }

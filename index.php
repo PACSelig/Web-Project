@@ -33,14 +33,14 @@
 
 <body id="body">
   <div class="container">
-    <nav style="position:sticky;">
+    <nav>
       <div id="navBar">
         <img src="images/menu.png" alt="menuButton" id="menuButton" onclick="menuToggle()" />
         <h3 id="title">IWTracker</h3>
         <!--<h3 id="team">By Christopher Selig & Marcus Toot</h3>-->
       </div>
     </nav>
-    <div id="menuContainer" style="position=sticky;">
+    <div id="menuContainer">
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
         <h1 class="menuText"><a href="closings.html">Closings</a></h1>
