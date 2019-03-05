@@ -1,0 +1,123 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Abel';
+  font-display: auto;
+  src: url("../fonts/Abel.woff2");
+}
+
+#bg-image {
+  position: relative;
+  background-color: black;
+  background-image: url("../images/background_image2.jpg");
+
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+}
+
+#loginContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+#loginMenu {
+  position: absolute;
+  background-color: whitesmoke;
+  height: 450px;
+  width: 300px;
+  border-radius: 1px;
+  top: calc(50% - 225px);
+  left: calc(50% - 150px);
+  box-shadow: 2px 2px 5px 2px #2f2f2fb8;
+}
+
+#loginTextBorder {
+  margin: 0;
+  background: linear-gradient(30deg, #4169e1 0%,#d08bea 100%);
+  height: 130px;
+  width: 100%;
+}
+
+#loginText {
+  margin: 0;
+  position: relative;
+  font: 75px 'Abel';
+  top: calc(50% - 47.5px);
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 12px #2f2f2f;
+}
+
+input#username, input#password {
+  border: 0;
+  position: relative;
+  margin-left: calc(50% - 125px);
+  margin-top: 50px;
+  background-color: whitesmoke;
+  border-bottom: 1px gray solid;
+  height: 40px;
+  text-indent: 8px;
+  width: 250px;
+  font-size: 100%;
+}
+
+input#rememberMe {
+  border: 0;
+  position: relative;
+  margin-left: calc(50% - 125px);
+  margin-top: 15px;
+  background-color: whitesmoke;
+  border-bottom: 1px gray solid;
+}
+
+p#rememberMeText {
+  display: inline;
+  font: 15px 'Abel';
+  bottom: 0.5px;
+}
+
+input#submitBtn {
+  border: 0;
+  position: relative;
+  margin-left: calc(50% - 125px);
+  margin-top: 40px;
+  background-color: #456cd6;
+  border: 1px gray solid;
+  height: 50px;
+  width: 250px;
+  font: 30px 'abel';
+  color: white;
+  text-shadow: 1px 1px 5px #2f2f2f;
+}
+
+input#submitBtn:active {
+  box-shadow: 1px 1px 1px #2f2f2f;
+}
+
+input#submitBtn:hover {
+  background-color: rgb(43, 94, 235)
+}
+
+.errorText {
+  margin: 30px 0px 0px 30px;
+  font-size: 13px;
+  position: absolute;
+  color: crimson;
+  z-index: 10;
+}

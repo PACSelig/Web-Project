@@ -1,10 +1,20 @@
 html {
+<<<<<<< HEAD
   height: 100vh;
   width: 100vw;
 }
 
 body {
   background-color: lavenderblush;
+=======
+  height: 94vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  background-color: #fff0f5;
+>>>>>>> refs/remotes/origin/master
   display: inline;
   margin: 0;
   height: 100vh;
@@ -21,16 +31,28 @@ body {
 .container {
   height: 100vh;
   width: 100vw;
+<<<<<<< HEAD
   background-color: ghostwhite;
 }
 
 nav {
   position: sticky;
+=======
+  background-color: #f8f8ff;
+  display: inline;
+}
+
+nav {
+>>>>>>> refs/remotes/origin/master
   top: 0;
   z-index: 4;
 }
 
+<<<<<<< HEAD
 nav>* {
+=======
+nav *{
+>>>>>>> refs/remotes/origin/master
   position: sticky;
   top: 0;
   z-index: 4;
@@ -40,7 +62,11 @@ nav>* {
   height: 40px;
   width: 100%;
   background-color: #2f2f2f;
+<<<<<<< HEAD
   color: antiquewhite;
+=======
+  color: #faebd7;
+>>>>>>> refs/remotes/origin/master
   border-bottom: 2.5px #1a53ff solid;
 }
 
@@ -51,7 +77,11 @@ nav>* {
   left: 1px;
   top: 1.5px;
   cursor: pointer;
+<<<<<<< HEAD
   z-index: 2;
+=======
+  z-index: 5;
+>>>>>>> refs/remotes/origin/master
 }
 
 #title {
@@ -75,7 +105,11 @@ nav>* {
 
 #menuContainer {
   background-color: #2f2f2f;
+<<<<<<< HEAD
   position: absolute;
+=======
+  position: relative;
+>>>>>>> refs/remotes/origin/master
   left: -100%;
   width: 100%;
   height: calc(100% - 42.5px);
@@ -84,6 +118,14 @@ nav>* {
 }
 
 @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
+=======
+  nav{
+    position: sticky;
+    top: 0;
+  }
+
+>>>>>>> refs/remotes/origin/master
   #title {
     font-size: 35px;
     font-weight: bold;
@@ -100,7 +142,10 @@ nav>* {
   }
 
   #menuButton {
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
     visibility: hidden;
   }
 
@@ -109,6 +154,10 @@ nav>* {
     height: 100%;
     left: 0%;
     position: sticky;
+<<<<<<< HEAD
+=======
+    overflow: unset;
+>>>>>>> refs/remotes/origin/master
   }
 
   #main-container {
@@ -116,6 +165,10 @@ nav>* {
     height: calc(100% - 42.6px);
     left: 200px;
     top: 43px;
+<<<<<<< HEAD
+=======
+    overflow-y: scroll;
+>>>>>>> refs/remotes/origin/master
   }
 }
 
@@ -124,7 +177,11 @@ nav>* {
   padding-top: 6px;
   text-align: center;
   font: 250% "Abel";
+<<<<<<< HEAD
   color: antiquewhite;
+=======
+  color: #faebd7;
+>>>>>>> refs/remotes/origin/master
   padding-bottom: 6px;
   border-bottom: 1px #383838 solid;
   cursor: pointer;
@@ -137,7 +194,11 @@ nav>* {
 
 #menuContainer>div>h1.menuText>a {
   text-decoration: none;
+<<<<<<< HEAD
   color: antiquewhite;
+=======
+  color: #faebd7;
+>>>>>>> refs/remotes/origin/master
 }
 
 #topLink {
@@ -174,3 +235,32 @@ article {
   background-color: #f4f4f4;
   padding-bottom: 1px;
 }
+<<<<<<< HEAD
+=======
+
+form#login{
+  position: relative;
+  top: 220px;
+}
+
+form#login>input#loginPageBtn {
+  position: relative;
+  left: 6px;
+  background-color: #1e90ff;
+  padding: 15px 60px;
+  border: 0;
+}
+
+form#login>input#loginPageBtn:hover {
+  position: relative;
+  left: 6px;
+  background-color: #1b7ada;
+  padding: 15px 60px;
+  border: 0;
+}
+
+.menuText .login {
+  text-decoration: none;
+  font-size: 100%;
+}
+>>>>>>> refs/remotes/origin/master
