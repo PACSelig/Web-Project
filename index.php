@@ -28,7 +28,6 @@
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <meta name="theme-color" content="#2f2f2f">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style data-styled-components=""></style>
 </head>
 
 <body id="body">
