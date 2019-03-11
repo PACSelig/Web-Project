@@ -57,6 +57,7 @@
             include('simple_html_dom.php');
             $html = file_get_html('ExampleData/closingData.html');
             $table = $html->find('table', 0)->outertext;
+            echo $table;
           ?>
       </article>
     </div>
