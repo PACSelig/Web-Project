@@ -26,6 +26,7 @@
   <meta name="msapplication-config" content="/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
   <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/ourTeam.css" />
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i" rel="stylesheet" />
   <meta name="theme-color" content="#2f2f2f" />
@@ -46,33 +47,22 @@
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
         <h1 class="menuText"><a href="closings.php">Closings</a></h1>
-        <h1 class="menuText"><a href="forecast.html">Forecast</a></h1>
-        <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
-        <h1 class="menuText"><a href="contact.html">Contact</a></h1>
-        <h1 class="menuText"><a href="faq.html">FAQ</a></h1>
-        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h5>
+        <h1 class="menuText"><a href="forecast.php">Forecast</a></h1>
+        <h1 class="menuText"><a href="ourTeam.php">Our Team</a></h1>
+        <h1 class="menuText"><a href="contact.php">Contact</a></h1>
+        <h1 class="menuText"><a href="faq.php">FAQ</a></h1>
+        <h5 class="menuText login"><a class="login" href="login.php">Login</a></h5>
       </div>
     </div>
     <div id="main-container">
-      <article>
-        <h1 id="main-Title">Website launch!</h1>
-        <hr>
-        <p id="mainArticleText">Welcome to IWTracker, this website was made to pull weather conditions from an external
-          source and use them to make an approximation of the likeliness of your school delaying or closing on a
-          specified day.
-          We are made up of a very small team of 2 people and this project is being solely developed by us at the
-          moment so if a feature on the website is broken please contact us and let us know what the issue is and we
-          will attempt to fix it right
-          away.
-        </p>
-        <h1 id="main-Title">Meet our team</h1>
-        <hr>
-        <p id="mainArticleText">Our team is currently made up of two people, Marcus Toot & Christopher Selig, if in the
-          future we expand,
-          we may bring more people onto the team to work on the website but for now I think you should learn a little
-          more about the team. Follow this link to learn a little more about us: <a href="ourTeam.html" style="text-decoration: none">Our
-            Team</a></p>
-      </article>
+      <div id="chrisTag">
+        <div class="bg-Tag">
+          <img src="/images/favicon-310.png" alt="icon" class="teamIcon">
+        </div>
+      </div>
+      <div id="marcusTag">
+        <div class="bg-Tag"></div>
+      </div>
     </div>
   </div>
   <script src="JS/titleScript.js"></script>

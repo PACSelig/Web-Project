@@ -1,0 +1,40 @@
+#chrisTag {
+  position: relative;
+  height: 50vh;
+  display: inline-block;
+  left: calc(25vw - 15vw);
+  top: 20vh;
+  width: 30vw;
+  overflow: hidden;
+}
+
+#marcusTag {
+  position: relative;
+  height: 50vh;
+  display: inline-block;
+  left: calc(50vw - 20vw);
+  top: 20vh;
+  width: 30vw;
+  overflow: hidden;
+}
+
+.bg-Tag {
+  position: relative;
+  background-color: wheat;
+  height: 100%;
+  width: 100%;
+  box-shadow: 3px 3px 20px 0px;
+  border-radius: 3px;
+}
+
+#main-container {
+  width: 100vw;
+}
+
+.teamIcon {
+  position: relative;
+  left: calc(50% - 25%);
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}

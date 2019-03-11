@@ -1,0 +1,33 @@
+table#closingsTable {
+  width: calc(100vw - 200px);
+}
+
+@media only screen and (max-width: 768px){
+  table#closingsTable {
+    width: auto;
+  }
+}
+
+tbody {
+
+}
+
+tr.closingRow td.timestamp {
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+tr.closingRow {
+    background-color: #eeeeee10;
+    box-shadow: 1px 1px 7px;
+    text-shadow: 1px 1px 8px #49494a;
+    font-weight: bolder;
+    font: caption;
+}
+
+td {
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
