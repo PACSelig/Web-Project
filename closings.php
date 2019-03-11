@@ -26,6 +26,7 @@
   <meta name="msapplication-config" content="../images/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/closings.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <meta name="theme-color" content="#2f2f2f">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,11 +45,11 @@
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
         <h1 class="menuText"><a href="closings.php">Closings</a></h1>
-        <h1 class="menuText"><a href="forecast.html">Forecast</a></h1>
-        <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
-        <h1 class="menuText"><a href="contact.html">Contact</a></h1>
-        <h1 class="menuText"><a href="faq.html">FAQ</a></h1>
-        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h5>
+        <h1 class="menuText"><a href="forecast.php">Forecast</a></h1>
+        <h1 class="menuText"><a href="ourTeam.php">Our Team</a></h1>
+        <h1 class="menuText"><a href="contact.php">Contact</a></h1>
+        <h1 class="menuText"><a href="faq.php">FAQ</a></h1>
+        <h5 class="menuText login"><a class="login" href="login.php">Login</a></h5>
       </div>
     </div>
     <div id="main-container">
@@ -56,7 +57,16 @@
           <?php 
             include('simple_html_dom.php');
             $html = file_get_html('ExampleData/closingData.html');
-            $table = $html->find('table', 0)->outertext;
+            $table = $html->find('table', 0);
+            $tableBody = $table->find('tbody',0);
+            foreach ($tableBody->find('tr') as $tr) {
+              $tr->class = "closingRow";
+              $tr->find('td', 0)->bgcolor = null;
+            }
+            $table->id = "closingsTable";
+            $table->cellspacing = "0";
+            $table->cellpadding = "10";
+            echo $table;
           ?>
       </article>
     </div>

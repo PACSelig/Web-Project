@@ -44,11 +44,11 @@
       <div>
         <h1 class="menuText"><a href="index.php">Home</a></h1>
         <h1 class="menuText"><a href="closings.php">Closings</a></h1>
-        <h1 class="menuText"><a href="forecast.html">Forecast</a></h1> 
-        <h1 class="menuText"><a href="ourTeam.html">Our Team</a></h1>
-        <h1 class="menuText"><a href="contact.html">Contact</a></h1>
-        <h1 class="menuText"><a href="faq.html">FAQ</a></h1>
-        <h5 class="menuText login"><a class="menuText login" href="login.php">Login</a></h5>
+        <h1 class="menuText"><a href="forecast.php">Forecast</a></h1>
+        <h1 class="menuText"><a href="ourTeam.php">Our Team</a></h1>
+        <h1 class="menuText"><a href="contact.php">Contact</a></h1>
+        <h1 class="menuText"><a href="faq.php">FAQ</a></h1>
+        <h5 class="menuText login"><a class="login" href="login.php">Login</a></h5>
       </div>
     </div>
     <div id="main-container">
