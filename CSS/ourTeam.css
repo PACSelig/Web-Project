@@ -1,40 +1,37 @@
-#chrisTag {
-  position: relative;
-  height: 50vh;
-  display: inline-block;
-  left: calc(25vw - 15vw);
-  top: 20vh;
-  width: 30vw;
-  overflow: hidden;
+@media only screen and (min-width: 768px){
+  #main-container {
+    position: fixed;
+    width: calc(100vw - 200px);
+    left: 200px;
+    top: 43px;
+  }
 }
 
-#marcusTag {
-  position: relative;
-  height: 50vh;
-  display: inline-block;
-  left: calc(50vw - 20vw);
-  top: 20vh;
-  width: 30vw;
-  overflow: hidden;
-}
-
-.bg-Tag {
-  position: relative;
-  background-color: wheat;
-  height: 100%;
+#main-grid {
+  display: grid;
   width: 100%;
-  box-shadow: 3px 3px 20px 0px;
-  border-radius: 3px;
+  height: 100%;
 }
 
-#main-container {
-  width: 100vw;
+.grid-item {
+  width: 10%;
+  height: 70%;
 }
 
-.teamIcon {
-  position: relative;
-  left: calc(50% - 25%);
-  border-radius: 50%;
-  width: 50%;
-  height: 50%;
+#mid {
+  width: 20%;
+}
+
+.card {
+  width: 30%;
+  height: 70%;
+  background-color: white;
+}
+
+#chris{
+
+}
+
+#marcus{
+
 }

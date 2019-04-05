@@ -55,13 +55,16 @@
       </div>
     </div>
     <div id="main-container">
-      <div id="chrisTag">
-        <div class="bg-Tag">
-          <img src="/images/favicon-310.png" alt="icon" class="teamIcon">
+      <div id=main-grid>
+        <div class="grid-item"></div>
+        <div class="card" id="chris">
+        
         </div>
-      </div>
-      <div id="marcusTag">
-        <div class="bg-Tag"></div>
+        <div class="grid-item" id="mid"></div>
+        <div class="card" id="marcus">
+        
+        </div>
+        <div class="grid-item"></div>
       </div>
     </div>
   </div>
